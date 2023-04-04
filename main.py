@@ -4,8 +4,10 @@ from pydantic import BaseModel
 import nltk
 nltk.download('punkt')
 
-import nltk
 nltk.download('stopwords')
+
+
+nltk.download('wordnet')
 
 from starlette.middleware.cors import CORSMiddleware
 from TextPreprocessor import TextAnalyzer
