@@ -25,6 +25,10 @@ class userRequest(BaseModel):
     searchQuery : str
     paraArray: list
 
+@app.get("/")
+def handleroot():
+    return "Hello"
+
 @app.post('/summarizer')
 async def getUserRequest(userR : userRequest):
     mlmodel = TextAnalyzer()
