@@ -1,6 +1,9 @@
 from fastapi import FastAPI,HTTPException
 from pydantic import BaseModel
 
+import nltk
+nltk.download('punkt')
+
 from starlette.middleware.cors import CORSMiddleware
 from TextPreprocessor import TextAnalyzer
 
